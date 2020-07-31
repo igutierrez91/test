@@ -1,0 +1,142 @@
+@import 'src/scss/settings/_settings.color.scss';
+@import 'src/scss/settings/_settings.breakpoints.scss';
+@import 'src/scss/settings/_settings.font.scss';
+
+
+.header {
+    max-width: 960px;
+    display: flex;
+    border-bottom: 3px solid $picton-blue;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 62px;
+
+    @include for-tablet {
+        min-height: 81px;
+    }
+
+    @include for-desktop {
+        min-height: 65px;
+    }
+
+    &__logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 254px;
+        max-height: 17px;
+        margin-left: 16px;
+
+        img {
+            max-width: 100%;
+        }
+
+        @include for-tablet {
+            height: 29px;
+            max-width: 406px;
+            margin-left: 35px;
+        }
+
+        @include for-desktop {
+            height: 29px;
+            max-width: 446px;
+            margin-left: 85px;
+        }
+
+        &__first_logo {
+            
+            @include for-desktop {
+                max-width: 154px;
+            }
+        }
+
+        &__separator {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            min-width: 20px;
+
+            @include for-tablet {
+                min-width: 38px;
+            }
+
+            @include for-desktop {
+                min-width: 64px;
+            }
+            
+
+            &--line {
+                width: 1px;
+                height: 16px;
+                @include for-desktop {
+                    min-height: 28px;
+                    width: 2px;
+                }
+                @include  for-tablet {
+                    min-height: 28px;
+                    width: 2px;
+                }
+                background-color: $light-silver;
+                
+            }
+        }
+
+        &__second_logo {
+
+            @include for-tablet {
+                max-width: 214px;
+            }
+
+            @include for-desktop {
+                max-width: 228px;
+            }
+        }
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        &__security {
+            @include for-phone {
+                display: none;
+            } 
+            display: flex;
+            flex-direction: row;
+            margin-right: 32px;
+            span {
+                color: $fun-green;
+                text-align: center;
+                font-family: 'Roboto Regular';
+                font-size: 13px;
+                letter-spacing: 0;
+                line-height: 18px;
+            }
+            &__icon {
+                
+            }
+
+            &__text {
+                margin-left: 6px;
+            }
+        }
+
+        &__selector {
+            margin-right: 15px;
+            min-width: 40px;
+            span {
+                color:$denim;
+                text-decoration: underline;
+            }
+            @include for-tablet {
+                margin-right: 34px;
+            }
+            @include for-desktop {
+                margin-right: 84px;
+            }
+        }
+    }
+
+}

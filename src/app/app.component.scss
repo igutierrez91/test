@@ -1,0 +1,22 @@
+@import 'src/scss/settings/_settings.breakpoints.scss';
+@import 'src/scss/settings/_settings.color.scss';
+
+.main-container {
+    max-width: 960px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.uploader-status ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: $picton-blue;
+}
+
+.spinner-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}

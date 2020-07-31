@@ -1,0 +1,384 @@
+@import 'src/scss/settings/_settings.color.scss';
+@import 'src/scss/settings/_settings.breakpoints.scss';
+@import 'src/scss/settings/_settings.font.scss';
+
+::ng-deep .mat-checkbox-checked .mat-checkbox-background,
+::ng-deep .mat-checkbox-indeterminate .mat-checkbox-background {
+  background-color: $denim !important;
+}
+
+::ng-deep .mat-button-wrapper {
+    color: #FFFFFF !important;
+    font-family: Roboto !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    letter-spacing: 0 !important;
+    line-height: 19px !important;
+    text-align: center !important;
+  }
+
+
+.button-override {
+    background-color: $denim !important;
+    border-radius: 4px;
+    min-width: 100%;
+    min-height: 48px;
+}
+
+.disabled {
+    opacity: 36%;
+}
+
+.title-accordeon {
+    height: 40px;
+    width: 342px;
+    color: $denim;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-decoration: underline;
+
+    @include for-tablet { 
+        height: 20px;
+        width: 572px;
+        color: #107DB7;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 20px;
+    }
+}
+
+.contain-accordeon{
+    border-left: 3px solid $light-silver;
+    p {
+        padding-left: 16px;
+        color: #4A4A4A;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 16px;
+    }
+
+    @include for-tablet { 
+        height: 80px;
+        width: 686px;
+        color: #4A4A4A;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 16px;
+    }
+    
+    @include for-desktop { 
+        height: 80px;
+        width: 781px;
+        color: #4A4A4A;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 16px;
+        p {
+            height: 72px;
+            width: 781px;
+            color: #4A4A4A;
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 18px;
+        }
+    }
+}
+
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @include for-tablet {
+        padding-left: 32px;
+        padding-right: 32px;
+
+    }
+
+    @include for-desktop {
+        padding-left: 85px;
+        padding-right: 85px;
+
+    }
+
+    h1 {
+        color:$denim;
+        font-family: Roboto Bold;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 19px;
+    }
+
+    &__welcome{
+        margin-top: 20px;
+    
+        p {
+            color: #4A4A4A;
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 19px;
+        }
+
+        @include for-tablet {
+            min-height: 81px;
+            p {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+
+        @include for-desktop {
+            min-height: 65px;
+            p {
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+
+
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: row;
+        min-width: 294px;
+    }
+
+    &__disclaimer {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid $picton-blue;
+        border-radius: 4px;
+        margin-top: 47px;
+        @include for-tablet {
+            min-width: 100%;
+            max-height: 63px;
+        }
+
+
+        &__icon {
+            min-width: 25px;
+            min-height: 25px;
+
+            @include for-desktop {
+                min-width: 30px;
+                min-height: 30px;
+            }
+        }
+
+        &__text {
+            min-width: 281px;
+            min-height: 95px;
+            padding: 17px 12px 17px;
+
+            p {
+                height: 95px;
+                width: 281px;
+                color: $denim;
+                font-family: Roboto;
+                font-size: 13px;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 19px;
+            }
+
+            @include for-tablet {
+                min-width: 648px;
+                max-height: 40px;
+                padding: 12px 12px 11px 0px;
+                p {
+                    height: 40px;
+                    width: 648px;
+                    color: #107DB7;
+                    font-family: Roboto;
+                    font-size: 13px;
+                    font-weight: 300;
+                    letter-spacing: 0;
+                    line-height: 20px;
+                }
+            }
+
+            @include for-desktop {
+                min-width: 712px;
+                max-height: 40px;
+                padding: 12px 12px 11px 0px;
+                p {
+                    height: 40px;
+                    width: 712px;
+                    color: #107DB7;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 300;
+                    letter-spacing: 0;
+                    line-height: 20px;
+                }
+            }
+
+        }
+    }
+
+    &__polit_private{
+        width: 100%;
+        margin-top: 32px;
+
+        @include for-tablet { 
+            margin-top: 25px;
+            min-width: 586px;
+
+            mat-expansion-panel-header {
+                padding-left: 0px;
+            }
+
+            ::ng-deep .mat-expansion-panel-body {
+                padding-left: 0px !important;
+            }
+        }
+
+        @include for-desktop { 
+            margin-top: 25px;
+            min-width: 781px;
+            mat-expansion-panel-header {
+                padding-left: 0px;
+            }
+
+            ::ng-deep .mat-expansion-panel-body {
+                padding-left: 0px !important;
+            }
+        }
+
+    }
+
+    &__checkbox {
+        min-width: 100%;
+        min-height: 36px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+
+        @include for-tablet {
+            margin-top: 24px;
+        }
+
+        &__icon {
+            max-width: 20px;
+            max-height: 20px;
+            margin-right: 12px;
+            margin-top:6px;
+            margin-bottom: 10px;
+        }
+
+        &__label {
+            max-width: 224px;
+            max-height: 36px;
+
+            @include for-tablet { 
+                max-width: 432px;
+                max-height: 20px;
+                margin-top: 5px;
+
+                span {
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+            }
+
+            span {
+                color: #4A4A4A;
+                font-family: Roboto;
+                font-size: 13px;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 18px;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+
+        @include for-tablet { 
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+
+        &__register {
+            margin-top: 37px;
+            min-width: 100%;
+            max-height: 48px;
+
+            @include for-tablet { 
+                min-width: 230px;
+            }
+
+        }
+    
+        &__back {
+            margin-top: 60px;
+            max-width: 230px;
+            text-align: center;
+            margin-left: 72px;
+            margin-right: 72px;
+            @include for-tablet { 
+                margin-top: 37px;
+                min-width: 230px;
+                max-height: 48px;
+                margin-left: 0px;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    padding-top: 8px;
+                }
+
+                ::ng-deep .mat-button-wrapper {
+                    height: 19px;
+                    width: 176px;
+                    color: #878787;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                    line-height: 19px;
+                    text-align: center;
+                }
+            }
+            ::ng-deep .mat-button-wrapper {
+                color: $greyLigth !important;
+                height: 19px !important;
+                width: 176px !important;
+                color: #878787 !important;
+                font-family: Roboto !important;
+                font-size: 16px !important;
+                font-weight: bold !important;
+                letter-spacing: 0 !important;
+                line-height: 19px !important;
+                text-align: center !important;
+            }
+            border-radius: 4px !important;
+            border: 1px solid #878787;
+        }
+    }
+
+}

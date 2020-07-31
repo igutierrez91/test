@@ -1,0 +1,29 @@
+<div class="register-container">
+        <div class="register-container__welcome">
+            <h1>{{ 'welcome_title' | translate}}</h1>
+            <p>
+                {{ 'update.information_block_one' | translate}}
+                <br>
+                {{ 'update.information_block_dos' | translate}}
+            </p>
+        </div>
+        <div class="register-container__form">
+            <app-user-form></app-user-form>
+        </div>
+        <div class="register-container__disclaimer">
+            <div class="register-container__disclaimer__icon">
+                <img src="assets/img/info.svg" alt="">
+            </div>
+            <div class="register-container__disclaimer__text">
+                <p>{{ 'update.disclaimer' | translate}}</p>
+            </div>
+        </div>
+        <div class="register-container__buttons">
+            <div class="register-container__buttons__register">
+                <button (click)="continue()" class="button-override" mat-flat-button>{{ 'buttons.update' | translate }}</button>
+            </div>
+            <div class="register-container__buttons__back">
+                <a mat-stroked-button href="https://www.segurcaixaadeslas.es/es/particulares" target="_self">{{ 'buttons.back' | translate }}</a>
+            </div>
+        </div>
+    </div>

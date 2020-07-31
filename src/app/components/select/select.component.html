@@ -1,0 +1,6 @@
+<div class="select-container">
+  <mat-select (selectionChange)="change($event)" [(value)]="defaultValue">
+     <mat-option *ngFor="let op of options"
+      [value]="op.value">{{op.label}}</mat-option>
+  </mat-select>
+</div>

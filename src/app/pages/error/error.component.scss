@@ -1,0 +1,275 @@
+@import 'src/scss/settings/_settings.color.scss';
+@import 'src/scss/settings/_settings.breakpoints.scss';
+@import 'src/scss/settings/_settings.font.scss';
+
+::ng-deep .mat-button-wrapper {
+    color: #FFFFFF !important;
+    font-family: Roboto !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    letter-spacing: 0 !important;
+    line-height: 19px !important;
+    text-align: center !important;
+  }
+
+
+.button-override {
+    background-color: $denim !important;
+    border-radius: 4px;
+    min-width: 100%;
+    min-height: 48px;
+}
+
+
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @include for-tablet {
+        padding-left: 32px;
+        padding-right: 32px;
+
+    }
+
+    @include for-desktop {
+        padding-left: 85px;
+        padding-right: 85px;
+
+        h1 {
+            font-size: 22px;
+            line-height: 25px;
+        }
+
+    }
+
+    h1 {
+        color:$denim;
+        font-family: Roboto Bold;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 19px;
+    }
+    
+
+    &__welcome{
+        margin-top: 20px;
+        width: 100%;
+        p {
+            color: #4A4A4A;
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 19px;
+        }
+
+        @include for-tablet {
+            p {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+
+        @include for-desktop {
+            p {
+                font-size: 16px;
+                line-height: 23px;
+                color: #107DB7;
+                font-family: Roboto;
+                font-size: 22px;
+                line-height: 25px;
+            }
+        }
+
+    }
+
+    &__disclaimer {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid $rose;
+        border-radius: 4px;
+        margin-top: 32px;
+        width: 100%;
+        height: 63px;
+        justify-content: center;
+        align-items: center;
+        @include for-tablet {
+            min-width: 100%;
+            max-height: 63px;
+        }
+
+        &__text {
+            padding-top: 12px;
+            p {
+                color: $rose;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 0;
+                line-height: 20px;
+                text-align: center;
+            }
+
+            @include for-tablet {
+                min-width: 648px;
+                max-height: 40px;
+                p {
+                    color: $rose;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0;
+                    line-height: 20px;
+                }
+            }
+
+            @include for-desktop {
+                min-width: 712px;
+                max-height: 40px;
+                p {
+                    height: 40px;
+                    width: 712px;
+                    color: $rose;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0;
+                    line-height: 20px;
+                }
+            }
+
+        }
+    }
+
+    &__main_text {
+        width: 100%;
+        margin-top: 28px;
+        
+        p {
+            color: #4A4A4A;
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 19px;
+        }
+
+        @include for-tablet{
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+        }
+
+        @include for-desktop{
+            p {
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+    }
+
+    &__advertise {
+        margin-top:40px;
+        width: 100%;
+        h2 {
+            color: $denim;
+            font-family: Roboto;
+            font-size: 13px;
+            letter-spacing: 0;
+            line-height: 18px;
+        }
+
+        @include for-tablet {
+            h2 {
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+
+        @include for-desktop {
+            h2 {
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+
+        @include for-tablet { 
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+
+        &__register {
+            margin-top: 37px;
+            min-width: 100%;
+            max-height: 48px;
+
+            @include for-tablet { 
+                min-width: 230px;
+            }
+
+        }
+    
+        &__back {
+            margin-top: 60px;
+            max-width: 230px;
+            text-align: center;
+            margin-left: 72px;
+            margin-right: 72px;
+            @include for-tablet { 
+                margin-top: 37px;
+                min-width: 230px;
+                max-height: 48px;
+                margin-left: 0px;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    padding-top: 8px;
+                }
+
+                ::ng-deep .mat-button-wrapper {
+                    height: 19px;
+                    width: 176px;
+                    color: #878787;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                    line-height: 19px;
+                    text-align: center;
+                }
+            }
+            ::ng-deep .mat-button-wrapper {
+                color: $greyLigth !important;
+                height: 19px !important;
+                width: 176px !important;
+                color: #878787 !important;
+                font-family: Roboto !important;
+                font-size: 16px !important;
+                font-weight: bold !important;
+                letter-spacing: 0 !important;
+                line-height: 19px !important;
+                text-align: center !important;
+            }
+            border-radius: 4px !important;
+            border: 1px solid #878787;
+        }
+    }
+
+    
+
+}

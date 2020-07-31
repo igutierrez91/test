@@ -1,0 +1,25 @@
+<div class="register-container">
+    <div class="register-container__welcome">
+        <h1>{{ 'welcome_title' | translate}}</h1>
+    </div>
+    <div class="register-container__disclaimer">
+        <div class="register-container__disclaimer__text">
+            <p>{{ 'error.denied' | translate}}</p>
+        </div>
+    </div>
+    <div class="register-container__main_text">
+        <p>{{ 'error.information_block_one' | translate}}</p>
+        <p>{{ 'error.information_block_dos' | translate}}</p>
+    </div>
+    <div class="register-container__advertise">
+        <h2>{{ 'error.send_error' | translate}}</h2>
+    </div>
+    <div class="register-container__buttons">
+        <div class="register-container__buttons__register">
+            <button (click)="continue()"  class="button-override" mat-flat-button>{{ 'buttons.ok' | translate}}</button>
+        </div>
+        <div class="register-container__buttons__back">
+            <a mat-stroked-button href="https://www.google.com/" target="_blank">{{ 'buttons.back' | translate}}</a>
+        </div>
+    </div>
+</div>

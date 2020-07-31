@@ -1,0 +1,106 @@
+@import 'src/scss/settings/_settings.color.scss';
+@import 'src/scss/settings/_settings.breakpoints.scss';
+@import 'src/scss/settings/_settings.font.scss';
+
+
+.footer {
+    max-width: 960px;
+    display: flex;
+    border-top: 3px solid $picton-blue;
+    flex-direction: row;
+    align-items: center;
+    min-height: 156px;
+    margin-top: 60px;
+    background-color: $charade;
+
+    @include for-tablet {
+        max-height:109px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 56px;
+    }
+
+    @include for-desktop {
+        min-height: 109px;
+        flex-direction: row;
+    }
+
+    &__logo {
+        min-width: 172px;
+        margin-left: 24px;
+        margin-bottom: 119px;
+        margin-top: 16px;
+        min-height: 21px;
+
+        @include for-tablet {
+            min-height:21px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 27px;
+            margin-bottom: 28px;
+        }
+
+        @include for-desktop {
+            min-height:19px;
+            min-width: 156px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 45px;
+            margin-bottom: 45px;
+            margin-left: 85px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        margin-left: 43px;
+
+        a {
+            color: #FFFFFF;
+            font-family: Roboto;
+            font-size: 12px;
+            letter-spacing: 0;
+            line-height: 25px;
+        }
+
+        @include for-tablet {
+            min-height:21px;
+            min-width: 585px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 27px;
+            margin-bottom: 28px;
+            justify-content: center;
+                
+            a {
+                color: #FFFFFF;
+                font-size: 13px;
+                line-height: 18px;
+                text-align: center;
+                margin-left: 10px;
+            }
+        }
+
+        @include for-tablet {
+            min-height:21px;
+            min-width: 585px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 45px;
+            margin-bottom: 45px;
+            justify-content: center;
+            margin-left: 49px;
+            a {
+                color: #FFFFFF;
+                font-family: Roboto;
+                font-size: 13px;
+                letter-spacing: 0;
+                line-height: 18px;
+                text-align: right;
+                padding-left: 5px;
+            }
+        }
+
+    }
+}

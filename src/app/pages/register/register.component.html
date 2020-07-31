@@ -1,0 +1,52 @@
+<div class="register-container">
+    <div class="register-container__welcome">
+        <!-- <div class="register-container__welcome__title"></div>
+            <div class="register-container__welcome__info"></div> -->
+        <h1>{{ 'welcome_title' | translate}}</h1>
+        <p>{{  'register.received' | translate}}</p>
+    </div>
+    <div class="register-container__form">
+        <app-user-form></app-user-form>
+    </div>
+    <div class="register-container__disclaimer">
+        <div class="register-container__disclaimer__icon">
+            
+        </div>
+        <div class="register-container__disclaimer__text">
+                <p>{{  'register.disclaimer' | translate}}</p>
+        </div>
+    </div>
+    <div class="register-container__polit_private">
+        <mat-expansion-panel class="mat-elevation-z0">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <span class="title-accordeon">
+                        {{  'register.rgpd_title' | translate}}
+                    </span>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="contain-accordeon">
+                <p>{{  'register.rgpd_contain' | translate}}</p>
+            </div>
+        </mat-expansion-panel>
+    </div>
+    <div class="register-container__checkbox">
+        <div class="register-container__checkbox__icon">
+            <mat-checkbox (change)="valueChange($event)"></mat-checkbox>
+        </div>
+        <div class="register-container__checkbox__label">
+            <span>
+                {{ 'register.check_literal' | translate}}
+            </span>
+        </div>
+    </div>
+    <div class="register-container__buttons">
+        <div class="register-container__buttons__register">
+            <button (click)="continue()" [ngClass]="{'disabled': !checked}" class="button-override" mat-flat-button>{{ 'buttons.register' | translate}}</button>
+        </div>
+        <div class="register-container__buttons__back">
+            <a  mat-stroked-button href="https://www.segurcaixaadeslas.es/es/particulares" target="_self">{{ 'buttons.back' | translate}}</a>
+        </div>
+    </div>
+    <!-- <app-user-form></app-user-form> -->
+</div>

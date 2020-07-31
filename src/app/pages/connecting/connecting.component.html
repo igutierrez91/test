@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="container__img">
+        <img *ngIf="typeOperation.register" src="assets/img/accediendo.svg" alt="">
+        <img *ngIf="typeOperation.update ||  typeOperation.error" src="assets/img/send.svg" alt="">
+    </div>
+    <div class="container__text">
+        <ng-container *ngIf="typeOperation.register">
+             <h2>{{ 'success.register' | translate}}</h2>
+            <h2>{{ 'success.access' | translate}}</h2>
+        </ng-container>
+        <ng-container *ngIf="typeOperation.update">
+                <h2>{{ 'success.update' | translate}}</h2>
+                <h2>{{ 'success.access' | translate}}</h2>
+        </ng-container>
+        <ng-container *ngIf="typeOperation.error">
+                <h2>{{ 'success.update' | translate}}</h2>
+                <h2>{{ 'success.redirect' | translate}}</h2>
+        </ng-container>
+    </div>
+</div>

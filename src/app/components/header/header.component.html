@@ -1,0 +1,26 @@
+<div class="header">
+  <div class="header__logos">
+      <div class="header__logos__first_logo">
+          <img src="assets/img/caixa.svg" alt="">
+      </div>
+      <div class="header__logos__separator">
+          <div class="header__logos__separator--line"></div>
+      </div>
+      <div class="header__logos__second_logo">
+          <img src="assets/img/color.svg" alt="">
+      </div>
+  </div>
+  <div class="header__information">
+    <div class="header__information__security">
+        <div class="header__information__security__icon">
+            <img src="assets/img/lock.svg" alt="">
+        </div>
+        <div class="header__information__security__text">
+          <span> {{ 'header.con_secure' | translate }} </span>
+        </div>
+    </div>
+    <div class="header__information__selector">
+      <app-select (valueChange)="changeLanguage($event)" [options]="languages" [defaultValue]="'es'"></app-select>
+    </div>
+  </div>
+</div>

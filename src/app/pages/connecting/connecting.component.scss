@@ -1,0 +1,30 @@
+@import 'src/scss/settings/_settings.color.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+        margin-top:75px;
+    }
+
+    &__text {
+        margin-top:35px;
+        h2 {
+            color: $picton-blue;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+}
+
+
+.uploader-status ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: $picton-blue;
+}

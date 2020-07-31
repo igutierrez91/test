@@ -1,0 +1,50 @@
+{
+    "welcome_title": "Benvingut/uda a l’Àrea Clients de SegurCaixa Adeslas",
+    "header": {
+        "con_secure": "Connexió segura"
+    },
+    "register": {
+        "received": "Aquestes són les teves dades que hem rebut des de CaixaBankNow. Per poder gestionar la sol·licitud i mantenir-te’n informat, t’has de registrar al portal de SegurCaixa Adeslas. Aquesta operació només l’has de fer en la primera sol·licitud.",
+        "disclaimer":"Si acceptes el registre, rebràs un e-mail amb la confirmació de l’alta d’usuari. En els accessos següents des de CaixaBankNow, entraràs directament a l’Àrea Clients de SegurCaixa Adeslas, a l’operativa de la pòlissa.",
+        "rgpd_title":"Informació bàsica de protecció de dades (Política de Privacitat o Protecció de Dades)",
+        "rgpd_contain":"SegurCaixa Adeslas, SA d’Assegurances i Reassegurances, tracta les dades personals per gestionar l’accés i la utilització de serveis que s’ofereixen oferts a través de les seves plataformes digitals, d’acord amb l’execució del contracte. Les dades que es faciliten no se cedeixen a tercers, tret d’obligació legal. Pots consultar més informació sobre la política de protecció de dades i com pots exercir els drets d’accés, rectificació, oposició i supressió, com també altres drets, inclosa la forma de retirar el consentiment, en aquest enllaç.",
+        "check_literal": "He llegit les condicions de la Política de Protecció de Dades i les accepto"
+    },
+    "update": {
+        "information_block_one": "Hem detectat que ja estàs registrat als serveis digitals de SegurCaixa Adeslas, però les teves dades de contacte no coincideixen amb la teva fitxa de client al portal de SegurCaixa Adeslas.",
+        "information_block_dos": "Per poder continuar, les teves dades s’actualitzaran a la configuració personal del portal de SegurCaixa Adeslas. L’e-mail i el mòbil es faran servir per poder gestionar les teves sol·licituds de serveis digitals de SegurCaixa Adeslas i mantenir-te’n informat.",
+        "disclaimer": "Les dades de contacte que hi ha actualment a SegurCaixa Adeslas s’actualitzaran amb les dades que s’ha rebut de CaixaBankNow."
+    },
+    "error": {
+        "denied": "Ho sentim, la teva sol·licitud d’accés s’ha denegat",
+        "information_block_one": "Si la pòlissa s’ha contractat avui, cal esperar un dia per activar els serveis digitals a SegurCaixa Adeslas.",
+        "information_block_dos": "Ens pots enviar un formulari per tramitar la incidència i el nostre equip d’Atenció al Client et respondrà en menys de 24 hores.Si t’ho estimes més, ens pots trucar al telèfon d’Atenció al Client de SegurCaixa Adeslas 935 181 080",
+        "send_error": "Vull enviar les meves dades al Contact Center de SegurCaixa Adeslas per gestionar la incidència:"
+    },
+    "buttons": {
+        "ok": "Enviar dades",
+        "back": "Tornar a CaixaBankNow",
+        "register": "Registrar-me",
+        "update": "Actualitzar dades"
+    },
+    "form":{
+        "name": "Nom",
+        "surname": "Cognoms",
+        "dni": "DINI/NIF/passaport",
+        "email": "E-mail",
+        "telefono": "Telèfon"
+    },
+    "success": {
+        "register": "Registre completa",
+        "access": "Accedint a l’operativa seleccionada",
+        "update": "Dades actualitzades",
+        "redirect": "Et redirigim a CaixaBankNow"
+    },
+    "footer": {
+        "pdrg": "Protecció de dades",
+        "info": "Informació legal",
+        "legal": "Avís legal",
+        "cookies": "Cookies",
+        "access": "Accesibilitat"
+    }
+}

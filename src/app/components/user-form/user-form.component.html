@@ -1,0 +1,112 @@
+
+<div class="container_form">
+  <div class="container_form__block">
+      <span class="container_form__block--label">
+        {{ 'form.name' | translate}}
+      </span>
+    <div class="container_form__block__field">
+        <span class="container_form__block__field--value">
+            Alejandro
+        </span>
+    </div>
+  </div>
+  <div class="container_form__block">
+      <span class="container_form__block--label">
+          {{ 'form.surname' | translate}}
+      </span>
+    <div class="container_form__block__field">
+        <span class="container_form__block__field--value">
+          Gonzalez Gonzalez
+        </span>
+    </div>
+  </div>
+  <div class="container_form__block">
+      <span class="container_form__block--label">
+          {{ 'form.dni' | translate}}
+      </span>
+    <div class="container_form__block__field">
+        <span class="container_form__block__field--value">
+            11111111D
+        </span>
+    </div>
+  </div>
+  <div class="container_form__block">
+      <span class="container_form__block--label">
+          {{ 'form.email' | translate}}
+      </span>
+    <div class="container_form__block__field">
+        <span class="container_form__block__field--value">
+            alejandro.*****@gmail.com
+        </span>
+    </div>
+  </div>
+  <div class="container_form__block">
+      <span class="container_form__block--label">
+          {{ 'form.telefono' | translate}}
+      </span>
+    <div class="container_form__block__field">
+        <span class="container_form__block__field--value">
+        *** *** 789
+        </span>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
+  <mat-card class="card">
+    <form [formGroup]="user">
+      <mat-form-field class="example-full-width">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="name" placeholder="Nombre">
+        <mat-hint>Errors appear instantly!</mat-hint>
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Primer apellido</mat-label>
+        <input matInput formControlName="surname" placeholder="Primer apellido">
+      </mat-form-field>
+      <br>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Segundo apellido</mat-label>
+        <input matInput formControlName="surname2" placeholder="Segundo apellido">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Numero de poliza</mat-label>
+        <input matInput formControlName="numPol" placeholder="Numero de poliza">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="Email">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Teléfono</mat-label>
+        <input matInput formControlName="phone" placeholder="Teléfono">
+      </mat-form-field>
+
+      <p>Al aceptar el registro, recibirás un email con la confirmación del alta del usuario</p>
+      <p>En los siguientes accesos desde CaixaBank Now, entraras directamente en tu área privada de SegurCaixa Adeslas a la
+        operativa de tu póliza.
+      </p>
+
+      <mat-checkbox class="example-margin" [labelPosition]="labelPosition" formControlName="readme">
+        He leido y acepto y acepto las condiciones de la politica de protección de datos
+      </mat-checkbox>
+    </form>
+    <section>
+      <button mat-raised-button [disabled]="user.invalid">Registarme</button>
+    </section>
+    <section>
+      <button mat-raised-button>Volver a CaixaBank Now</button>
+    </section>
+  </mat-card>
+</div> -->
